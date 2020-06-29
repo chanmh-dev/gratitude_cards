@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  <title>Ecards</title>
+{% endblock title %}
+
+
+{% block content %}
+  <div class="container">
+    <h1>Gratitude Cards 感恩卡</h1>
+    <br>
+    <div class="row">
+        <div class="col-sm"><img src = "{% static 'images/mothers_day1.jpg' %}" alt ="" class="img-fluid">
+          {{quote1 | safe}}
+            <div class="form-group">
+              <label for="FormControlTextarea1">Write your gratitude here (请写下您的感恩词)</label>
+              <textarea class="form-control" id="gratitude1" rows="4"></textarea>
+
+              <label for="FormControlTextarea2">Enter your name here (姓名)</label>
+              <textarea class="form-control" id="name1" rows="1"></textarea>
+            </div>
+            
+            <form action="" method="post">
+              {% csrf_token %}
+              <input type="submit" value="Submit (提交)">
+            </form>
+        </div>
+
+        <div class="col-sm"><img src = "{% static 'images/mothers_day2.jpg' %}" alt ="" class="img-fluid">
+          {{quote2 | safe}}
+            <div class="form-group">
+              <label for="FormControlTextarea3">Write your gratitude here (请写下您的感恩词)</label>
+              <textarea class="form-control" id="gratitude1" rows="4"></textarea>
+
+              <label for="FormControlTextarea4">Enter your name here (姓名)</label>
+              <textarea class="form-control" id="name1" rows="1"></textarea>
+            </div>
+
+            <form action="" method="post">
+              {% csrf_token %}
+              <input type="submit" value="Submit (提交)">
+            </form>                    
+        </div>
+
+        <div class="col-sm"><img src = "{% static 'images/mothers_day3.jpg' %}" alt ="" class="img-fluid">
+          {{quote3 | safe}}
+             <div class="form-group">
+              <label for="FormControlTextarea5">Write your gratitude here (请写下您的感恩词)</label>
+              <textarea class="form-control" id="gratitude1" rows="4"></textarea>
+
+              <label for="FormControlTextarea6">Enter your name here (姓名)</label>
+              <textarea class="form-control" id="name1" rows="1"></textarea>
+            </div> 
+
+            <form action="" method="post">
+              {% csrf_token %}
+              <input type="submit" value="Submit (提交)">
+            </form>                    
+        </div>
+    </div>
+
+    <br>
+
+  </div>
+{% endblock content %}

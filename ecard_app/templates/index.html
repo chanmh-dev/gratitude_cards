@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  <title>Ecards</title>
+{% endblock title %}
+
+
+{% block content %}
+  <div class="container">
+    <h1>Gratitude Cards 感恩卡</h1>
+    <br>
+    <div class="row">
+        <div class="col-sm"><img src = "{% static 'images/image1.jpg' %}" alt ="" class="img-fluid">
+          {{quote1 | safe}}
+            <form action="" method="post">
+              {% csrf_token %}
+              {{ form1.as_p }}
+              <input type="submit" name="btnform1" value="Submit (提交)">
+            </form> 
+        </div>
+
+        <div class="col-sm"><img src = "{% static 'images/image2.jpg' %}" alt ="" class="img-fluid">
+          {{quote2 | safe}}
+            <form action="" method="post">
+              {% csrf_token %}
+              {{ form2.as_p }}
+              <input type="submit" name="btnform2" value="Submit (提交)">
+            </form>                 
+        </div>
+
+        <div class="col-sm"><img src = "{% static 'images/image3.jpg' %}" alt ="" class="img-fluid">
+          {{quote3 | safe}}
+            <form action="" method="post">
+              {% csrf_token %}
+              {{ form3.as_p }}
+              <input type="submit" name="btnform3" value="Submit (提交)">
+            </form>         
+
+        </div>
+    </div>
+
+    <br>
+
+  </div>
+{% endblock content %}
