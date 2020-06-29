@@ -1,1 +1,1 @@
-web: gunicorn gratitude-cards.wsgi
+web: gunicorn ecards.wsgi
