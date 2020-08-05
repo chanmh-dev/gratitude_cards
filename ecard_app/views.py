@@ -80,7 +80,7 @@ def ecard(request):
     #print('all_quotes2', all_quotes2)
     if (all_quotes3):
         datetime = quotes3.objects.values_list('date_time', flat=True).distinct()
-        print(datetime)
+        #print(datetime)
         messages = quotes3.objects.values_list('quote', flat=True).distinct().order_by('-date_time')
         for message in messages:
             message3 = message3 + message
@@ -211,24 +211,24 @@ def index(request):
     #print('all_quotes2', all_quotes2)
     if (all_quotes2):
         datetime = quotes2.objects.values_list('date_time', flat=True).distinct()
-        print(datetime)
+        #print(datetime)
         messages = quotes2.objects.values_list('quote', flat=True).distinct().order_by('-date_time')
         for message in messages:
             message2 = message2 + message
 
-        print('message2', message1)        
+        #print('message2', message1)        
 
 
     all_quotes3 = quotes3.objects.all().order_by('-date_time')
     #print('all_quotes2', all_quotes2)
     if (all_quotes3):
         datetime = quotes3.objects.values_list('date_time', flat=True).distinct()
-        print(datetime)
+        #print(datetime)
         messages = quotes3.objects.values_list('quote', flat=True).distinct().order_by('-date_time')
         for message in messages:
             message3 = message3 + message
 
-        print('message3', message1)    
+        #print('message3', message1)    
 
     context = {}
  
