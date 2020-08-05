@@ -137,9 +137,9 @@ def ecard(request):
           </div>
         """
 
-    context['quote1'] = '<div class="mqcontainer">' + '<ul class=marquee>' + message1 + '</ul>' + '</div>'
-    context['quote2'] = '<div class="mqcontainer">' + '<ul class=marquee>' + message2 + '</ul>' + '</div>'
-    context['quote3'] = '<div class="mqcontainer">' + '<ul class=marquee>' + message3 + '</ul>' + '</div>'
+    context['quote1'] = '<div class="mqcontainer">' + message1 + '</div>'
+    context['quote2'] = '<div class="mqcontainer">' + message2 + '</div>'
+    context['quote3'] = '<div class="mqcontainer">' + message3 + '</div>'
     context['form1'] = form1
     context['form2'] = form2
     context['form3'] = form3
@@ -232,9 +232,9 @@ def index(request):
 
     context = {}
  
-    context['quote1'] = '<div class="mqcontainer">' + '<ul class=marquee1>' + message1 + '</ul>' + '</div>'
-    context['quote2'] = '<div class="mqcontainer">' + '<ul class=marquee2>' + message2 + '</ul>' + '</div>'
-    context['quote3'] = '<div class="mqcontainer">' + '<ul class=marquee3>' + message3 + '</ul>' + '</div>'
+    context['quote1'] = '<div class="mqcontainer">' + message1 + '</div>'
+    context['quote2'] = '<div class="mqcontainer">' + message2 + '</div>'
+    context['quote3'] = '<div class="mqcontainer">' + message3 + '</div>'
     context['form1'] = form1
     context['form2'] = form2
     context['form3'] = form3

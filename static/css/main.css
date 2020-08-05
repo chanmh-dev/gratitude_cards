@@ -1,14 +1,10 @@
+/*
 body {
     background-image: url("../images/wishing_pond.jpg");
     background-repeat: no-repeat;
     background-size: cover; 
    }
 
-/*
-.col-sm:nth-of-type(2n+1){
-    background-color: #f2f2f2;
-}
-*/
 
 .col-sm {
     background-color: #e6f2ff;
@@ -36,7 +32,6 @@ body {
 }
 
 
-/* Make it move! */
 @keyframes marquee1 {
     0%   { top:   8em }
     100% { top: -11em }
@@ -51,7 +46,6 @@ body {
 }
 
 
-/* Make it move! */
 @keyframes marquee2 {
     0%   { top:   8em }
     100% { top: -11em }
@@ -66,14 +60,13 @@ body {
 }
 
 
-/* Make it move! */
 @keyframes marquee3 {
     0%   { top:   8em }
     100% { top: -11em }
 }
 
+*/
 
-/*
 body {
     background-image: url("../images/wishing_pond.jpg");
     background-repeat: no-repeat;
@@ -110,4 +103,4 @@ body {
     0%   { top:   8em }
     100% { top: -11em }
 }
-*/
+
