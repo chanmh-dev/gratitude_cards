@@ -25,7 +25,7 @@ class quotesForm(forms.ModelForm):
 
     def clean(self):
         cleaned_data = self.cleaned_data
-        begin = '<p class="marquee">'
+        begin = '<p class="marquee1">'
         end = '</p> <br>'
         cleaned_data['quote'] = begin + cleaned_data['quote'] + ' (' + cleaned_data['name'] + ')' + end
         print (cleaned_data)
@@ -49,7 +49,7 @@ class quotes2Form(forms.ModelForm):
 
     def clean(self):
         cleaned_data = self.cleaned_data
-        begin = '<p class="marquee">'
+        begin = '<p class="marquee1">'
         end = '</p> <br>'
         cleaned_data['quote'] = begin + cleaned_data['quote'] + ' (' + cleaned_data['name'] + ')' + end
         print (cleaned_data)
@@ -73,7 +73,7 @@ class quotes3Form(forms.ModelForm):
 
     def clean(self):
         cleaned_data = self.cleaned_data
-        begin = '<p class="marquee">'
+        begin = '<p class="marquee1">'
         end = '</p> <br>'
         cleaned_data['quote'] = begin + cleaned_data['quote'] + ' (' + cleaned_data['name'] + ')' + end
         print (cleaned_data)

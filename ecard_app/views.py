@@ -232,9 +232,9 @@ def index(request):
 
     context = {}
  
-    context['quote1'] = '<div class="mqcontainer">' + message1 + '</div>'
-    context['quote2'] = '<div class="mqcontainer">' + message2 + '</div>'
-    context['quote3'] = '<div class="mqcontainer">' + message3 + '</div>'
+    context['quote1'] = '<div class="mqcontainer">' + '<div class="marquee">' + message1 + '</div>' + '</div>'
+    context['quote2'] = '<div class="mqcontainer">' + '<div class="marquee">' + message2 + '</div>' + '</div>'
+    context['quote3'] = '<div class="mqcontainer">' + '<div class="marquee">' + message3 + '</div>' + '</div>'
     context['form1'] = form1
     context['form2'] = form2
     context['form3'] = form3
