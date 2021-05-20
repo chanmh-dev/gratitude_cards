@@ -2,16 +2,16 @@
 {% load static %}
 
 {% block title %}
-  <title>Blessing Cards (祈福卡)</title>
+  <title>吉祥佛诞忆佛恩</title>
 {% endblock title %}
 
 
 {% block content %}
   <div class="container">
-    <h1>Blessing Cards 祈福卡</h1>
+    <h2 style="color:white; text-align:center">吉祥佛诞忆佛恩 Remembering Buddha's Kindness @ Auspicious Vesak</h2>
     <br>
     <div class="row">
-        <div class="col-sm"><img src = "{% static 'images/vesak-day.jpg' %}" alt ="" class="img-fluid">
+        <div class="col-sm"><img src = "{% static 'images/Card_Gratitude.jpg' %}" alt ="" class="img-fluid">
           {{quote1 | safe}}
             <form action="" method="post">
               {% csrf_token %}
@@ -20,7 +20,7 @@
             </form> 
         </div>
 
-        <div class="col-sm"><img src = "{% static 'images/enlightenment-buddha-bodhi-tree.jpg' %}" alt ="" class="img-fluid">
+        <div class="col-sm"><img src = "{% static 'images/Card_Supplication.jpg' %}" alt ="" class="img-fluid">
           {{quote2 | safe}}
             <form action="" method="post">
               {% csrf_token %}
@@ -29,7 +29,7 @@
             </form>                 
         </div>
 
-        <div class="col-sm"><img src = "{% static 'images/vesak.jpg' %}" alt ="" class="img-fluid">
+        <div class="col-sm"><img src = "{% static 'images/Card_Aspiration.jpg' %}" alt ="" class="img-fluid">
           {{quote3 | safe}}
             <form action="" method="post">
               {% csrf_token %}

@@ -186,13 +186,13 @@ def index(request):
  
         print('empty post') 
         form1 = quotesForm()
-        form2 = quotesForm()
-        form3 = quotesForm()                          
+        form2 = quotes2Form()
+        form3 = quotes3Form()                          
     else:
         print('---GET---')
         form1 = quotesForm()
-        form2 = quotesForm()
-        form3 = quotesForm()
+        form2 = quotes2Form()
+        form3 = quotes3Form()
         if 'submitted' in request.GET:
             submitted = True
 
